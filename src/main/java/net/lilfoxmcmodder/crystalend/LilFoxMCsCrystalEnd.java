@@ -1,6 +1,7 @@
-package net.flickt.swordmod;
+package net.lilfoxmcmodder.crystalend;
 
 import com.mojang.logging.LogUtils;
+import net.lilfoxmcmodder.item.Moditems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -16,15 +17,15 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(SwordMod.MOD_ID)
-public class SwordMod {
+@Mod(LilFoxMCsCrystalEnd.MOD_ID)
+public class LilFoxMCsCrystalEnd {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "swordmod";
+    public static final String MOD_ID = "lilfoxmcscrystalend";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
 
 
-    public SwordMod(FMLJavaModLoadingContext context) {
+    public LilFoxMCsCrystalEnd(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in
