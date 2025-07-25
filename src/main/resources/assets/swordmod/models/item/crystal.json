@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "swordmod:item/crystalore"
+    "layer0": "swordmod:item/crystal"
   }
 }
