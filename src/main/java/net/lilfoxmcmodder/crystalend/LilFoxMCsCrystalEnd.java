@@ -2,6 +2,7 @@ package net.lilfoxmcmodder.crystalend;
 
 import com.mojang.logging.LogUtils;
 import net.lilfoxmcmodder.blocks.ModBlocks;
+import net.lilfoxmcmodder.item.ModCreativeModeTab;
 import net.lilfoxmcmodder.item.Moditems;
 import net.lilfoxmcmodder.sound.ModSounds;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -32,6 +33,8 @@ public class LilFoxMCsCrystalEnd {
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTab.register(modEventBus);
 
         Moditems.register(modEventBus);
 
