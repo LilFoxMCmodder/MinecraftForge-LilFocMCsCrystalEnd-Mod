@@ -8,6 +8,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.TurtleEggBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -25,6 +26,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> CRYSTALITE_BLOCK = registryBlock("crystalite_block_ore",
             () ->new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(ModSounds.CRYSTALITE_ORE_BLOCK_SOUNDS)));
 
+
+    public static final RegistryObject<Block> CRYSTAL_BLOCK = registryBlock("crystal_block",
+            () ->new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> RegistryObject<T> registryBlock(String name, Supplier<T> block){

@@ -34,6 +34,7 @@ public class LilFoxMCsCrystalEnd {
         MinecraftForge.EVENT_BUS.register(this);
 
         Moditems.register(modEventBus);
+
         ModBlocks.register(modEventBus);
 
         ModSounds.register(modEventBus);
@@ -57,6 +58,11 @@ public class LilFoxMCsCrystalEnd {
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.CRYSTALITE_BLOCK);
         }
+
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.CRYSTAL_BLOCK);
+        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

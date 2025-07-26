@@ -1,5 +1,6 @@
 {
   "item.lilfoxmcscrystalend.crystal": "Crystal",
 
-  "block.lilfoxmcscrystalend.crystalite_block_ore": "Crystalite Ore Block"
+  "block.lilfoxmcscrystalend.crystalite_block_ore": "Crystalite Ore Block",
+  "block.lilfoxmcscrystalend.crystal_block": "Crystal Block"
 }
