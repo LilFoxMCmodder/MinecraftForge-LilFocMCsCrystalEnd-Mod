@@ -1,4 +1,5 @@
 {
+
   "crystalite_ore_block_break": {
     "subtitle": "sounds.lilfoxmcscrystalend.crystalite_ore_block_break",
     "sounds": [
@@ -27,6 +28,36 @@
     "subtitle": "sounds.lilfoxmcscrystalend.crystalite_ore_block_fall",
     "sounds": [
       "lilfoxmcscrystalend:crystalite_ore_block_fall"
+    ]
+  },
+  "crystal_block_break": {
+    "subtitle": "sounds.lilfoxmcscrystalend.crystal_block_break",
+    "sounds": [
+      "lilfoxmcscrystalend:crystal_block_break"
+    ]
+  },
+  "crystal_block_step": {
+    "subtitle": "sounds.lilfoxmcscrystalend.crystal_block_step",
+    "sounds": [
+      "lilfoxmcscrystalend:crystal_block_step"
+    ]
+  },
+  "crystal_block_place": {
+    "subtitle": "sounds.lilfoxmcscrystalend.crystal_block_place",
+    "sounds": [
+      "lilfoxmcscrystalend:crystal_block_place"
+    ]
+  },
+  "crystal_block_hit": {
+    "subtitle": "sounds.lilfoxmcscrystalend.crystal_block_hit",
+    "sounds": [
+      "lilfoxmcscrystalend:crystal_block_hit"
+    ]
+  },
+  "crystal_block_fall": {
+    "subtitle": "sounds.lilfoxmcscrystalend.crystal_block_fall",
+    "sounds": [
+      "lilfoxmcscrystalend:crystal_block_fall"
     ]
   }
 }

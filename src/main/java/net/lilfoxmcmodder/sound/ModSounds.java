@@ -19,8 +19,17 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> CRYSTALITE_ORE_BLOCK_HIT= registerSoundEvent("crystalite_ore_block_hit");
     public static final RegistryObject<SoundEvent> CRYSTALITE_ORE_BLOCK_FALL= registerSoundEvent("crystalite_ore_block_fall");
 
+    public static final RegistryObject<SoundEvent> CRYSTAL_BLOCK_BREAK= registerSoundEvent("crystal_block_break");
+    public static final RegistryObject<SoundEvent> CRYSTAL_BLOCK_STEP= registerSoundEvent("crystal_block_step");
+    public static final RegistryObject<SoundEvent> CRYSTAL_BLOCK_PLACE= registerSoundEvent("crystal_block_place");
+    public static final RegistryObject<SoundEvent> CRYSTAL_BLOCK_HIT= registerSoundEvent("crystal_block_hit");
+    public static final RegistryObject<SoundEvent> CRYSTAL_BLOCK_Fall= registerSoundEvent("crystal_block_fall");
+
     public static final ForgeSoundType  CRYSTALITE_ORE_BLOCK_SOUNDS = new ForgeSoundType(1f, 1f,
             ModSounds.CRYSTALITE_ORE_BLOCK_BREAK, ModSounds.CRYSTALITE_ORE_BLOCK_STEP, ModSounds.CRYSTALITE_ORE_BLOCK_PLACE, ModSounds.CRYSTALITE_ORE_BLOCK_HIT, ModSounds.CRYSTALITE_ORE_BLOCK_FALL);
+
+    public static final ForgeSoundType CRYSTAL_BLOCK_SOUNDS = new ForgeSoundType(1f, 1f,
+    ModSounds.CRYSTAL_BLOCK_BREAK, ModSounds.CRYSTAL_BLOCK_STEP, ModSounds.CRYSTAL_BLOCK_PLACE, ModSounds.CRYSTAL_BLOCK_HIT, ModSounds.CRYSTAL_BLOCK_Fall);
 
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {
         return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(LilFoxMCsCrystalEnd.MOD_ID, name)));

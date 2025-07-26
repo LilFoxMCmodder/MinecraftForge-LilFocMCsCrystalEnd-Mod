@@ -5,6 +5,7 @@ import net.lilfoxmcmodder.item.Moditems;
 import net.lilfoxmcmodder.sound.ModSounds;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
@@ -28,7 +29,7 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> CRYSTAL_BLOCK = registryBlock("crystal_block",
-            () ->new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+            () ->new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(ModSounds.CRYSTAL_BLOCK_SOUNDS)));
 
 
     private static <T extends Block> RegistryObject<T> registryBlock(String name, Supplier<T> block){
