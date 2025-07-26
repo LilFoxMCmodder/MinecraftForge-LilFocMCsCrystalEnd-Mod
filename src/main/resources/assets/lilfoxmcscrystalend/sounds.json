@@ -1,0 +1,39 @@
+{
+  "crystalite_ore_block_break": {
+    "subtitle": "sounds.lilfoxmcscrystalend.crystalite_ore_block_break",
+    "sounds": [
+      "lilfoxmcscrystalend:crystalite_ore_block_break"
+    ]
+  },
+  "crystalite_ore_block_step": {
+    "subtitle": "sounds.lilfoxmcscrystalend.crystalite_ore_block_step",
+    "sounds": [
+      "lilfoxmcscrystalend:crystalite_ore_block_step"
+    ]
+  },
+  "crystalite_ore_block_place": {
+    "subtitle": "sounds.lilfoxmcscrystalend.crystalite_ore_block_place",
+    "sounds": [
+      "lilfoxmcscrystalend:crystalite_ore_block_place"
+    ]
+  },
+  "crystalite_ore_block_hit": {
+    "subtitle": "sounds.lilfoxmcscrystalend.crystalite_ore_block_hit",
+    "sounds": [
+      "lilfoxmcscrystalend:crystalite_ore_block_hit"
+    ]
+  },
+  "crystalite_ore_block_fall": {
+    "subtitle": "sounds.lilfoxmcscrystalend.crystalite_ore_block_fall",
+    "sounds": [
+      "lilfoxmcscrystalend:crystalite_ore_block_fall"
+    ]
+  }
+}
+
+
+
+
+
+
+

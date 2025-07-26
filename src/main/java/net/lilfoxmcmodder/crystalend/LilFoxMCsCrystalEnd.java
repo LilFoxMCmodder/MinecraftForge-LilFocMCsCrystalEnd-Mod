@@ -1,7 +1,9 @@
 package net.lilfoxmcmodder.crystalend;
 
 import com.mojang.logging.LogUtils;
+import net.lilfoxmcmodder.blocks.ModBlocks;
 import net.lilfoxmcmodder.item.Moditems;
+import net.lilfoxmcmodder.sound.ModSounds;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -32,6 +34,9 @@ public class LilFoxMCsCrystalEnd {
         MinecraftForge.EVENT_BUS.register(this);
 
         Moditems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
+        ModSounds.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -49,6 +54,9 @@ public class LilFoxMCsCrystalEnd {
             event.accept(Moditems.CRYSTAL);
         }
 
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.CRYSTALITE_BLOCK);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

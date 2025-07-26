@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "lilfoxmcscrystalend:block/crystalite_block_ore"
+  }
+}
