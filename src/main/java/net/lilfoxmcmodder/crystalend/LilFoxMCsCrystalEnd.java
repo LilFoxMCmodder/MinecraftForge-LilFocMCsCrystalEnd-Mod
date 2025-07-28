@@ -58,9 +58,13 @@ public class LilFoxMCsCrystalEnd {
             event.accept(Moditems.CRYSTAL);
         }
 
+        // possible raw_crystal_block
+
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.CRYSTALITE_BLOCK);
         }
+
+        // possible raw_crystal_block
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.CRYSTAL_BLOCK);

@@ -27,6 +27,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> CRYSTALITE_BLOCK = registryBlock("crystalite_block_ore",
             () ->new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(ModSounds.CRYSTALITE_ORE_BLOCK_SOUNDS)));
 
+    // possible RAW_CRYSTAL_BLOCK
+
 
     public static final RegistryObject<Block> CRYSTAL_BLOCK = registryBlock("crystal_block",
             () ->new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(ModSounds.CRYSTAL_BLOCK_SOUNDS)));

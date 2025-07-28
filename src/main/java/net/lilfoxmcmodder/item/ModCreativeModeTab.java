@@ -21,6 +21,8 @@ public class ModCreativeModeTab {
                         output.accept(Moditems.CRYSTAL.get());
                     }).build());
 
+    // possible raw_crystal_block
+
 
     public static final RegistryObject<CreativeModeTab> LILFOXMCSCRYSTALEND_BlOCKS_TAB = CREATIVE_MODE_TABS.register("lilfoxmcscrystalend_blocks_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.CRYSTAL_BLOCK.get()))

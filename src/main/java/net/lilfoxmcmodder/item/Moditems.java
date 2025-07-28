@@ -13,6 +13,8 @@ public class Moditems {
 
     public static final RegistryObject<Item> CRYSTAL = ITEMS.register("crystal", () -> new Item(new Item.Properties()));
 
+    // possible crystal Ingot
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
