@@ -1,5 +1,6 @@
 package net.lilfoxmcmodder.item;
 
+import com.google.common.io.LittleEndianDataInputStream;
 import net.lilfoxmcmodder.crystalend.LilFoxMCsCrystalEnd;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -11,9 +12,11 @@ public class Moditems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, LilFoxMCsCrystalEnd.MOD_ID);
 
-    public static final RegistryObject<Item> CRYSTAL = ITEMS.register("crystal", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CRYSTAL = ITEMS.register("crystal",
+            () -> new Item(new Item.Properties()));
 
-    // possible crystal Ingot
+    public static final RegistryObject<Item> CRYSTAL_INGOT = ITEMS.register("crystal_ingot",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -19,9 +19,10 @@ public class ModCreativeModeTab {
                     .title(Component.translatable("creativetab.lilfoxmcscrystalend.crystal_items"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(Moditems.CRYSTAL.get());
+                        output.accept(Moditems.CRYSTAL_INGOT.get());
                     }).build());
 
-    // possible raw_crystal_block
+
 
 
     public static final RegistryObject<CreativeModeTab> LILFOXMCSCRYSTALEND_BlOCKS_TAB = CREATIVE_MODE_TABS.register("lilfoxmcscrystalend_blocks_tab",

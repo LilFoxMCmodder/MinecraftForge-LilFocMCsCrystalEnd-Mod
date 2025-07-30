@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "crystal_ingot",
+  "ingredient": {
+    "item": "lilfoxmcscrystalend:crystal"
+  },
+  "result": {
+    "id": "lilfoxmcscrystalend:crystal_ingot"
+  }
+}
