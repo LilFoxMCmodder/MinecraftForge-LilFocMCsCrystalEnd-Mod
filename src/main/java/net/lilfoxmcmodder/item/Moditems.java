@@ -2,6 +2,7 @@ package net.lilfoxmcmodder.item;
 
 import com.google.common.io.LittleEndianDataInputStream;
 import net.lilfoxmcmodder.crystalend.LilFoxMCsCrystalEnd;
+import net.lilfoxmcmodder.item.custom.CrystalChiselItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,6 +18,9 @@ public class Moditems {
 
     public static final RegistryObject<Item> CRYSTAL_INGOT = ITEMS.register("crystal_ingot",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> CRYSTAL_CHISEL = ITEMS.register("crystal_chisel",
+            () -> new CrystalChiselItem(new Item.Properties().durability(35)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

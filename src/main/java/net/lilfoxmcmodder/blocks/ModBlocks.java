@@ -18,23 +18,29 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, LilFoxMCsCrystalEnd.MOD_ID);
+            DeferredRegister.create
+                    (ForgeRegistries.BLOCKS, LilFoxMCsCrystalEnd.MOD_ID);
 
 
 
     public static final RegistryObject<Block> CRYSTALITE_BLOCK = registryBlock("crystalite_block_ore",
-            () ->new DropExperienceBlock(UniformInt.of(1,1), BlockBehaviour.Properties.of().strength(50,1200f).requiresCorrectToolForDrops().sound(ModSounds.CRYSTALITE_ORE_BLOCK_SOUNDS)));
+            () ->new DropExperienceBlock(UniformInt.of(1,1), BlockBehaviour.Properties.of()
+                    .strength(50,1200f)
+                    .requiresCorrectToolForDrops()
+                    .sound(ModSounds.CRYSTALITE_ORE_BLOCK_SOUNDS)));
 
 
-    // possible RAW_CRYSTAL_BLOCK
 
 
     public static final RegistryObject<Block> CRYSTAL_BLOCK = registryBlock("crystal_block",
-            () ->new Block(BlockBehaviour.Properties.of().strength(30f,1200f).requiresCorrectToolForDrops().sound(ModSounds.CRYSTAL_BLOCK_SOUNDS)));
-
+            () ->new Block(BlockBehaviour.Properties.of()
+                    .strength(30f,1200f)
+                    .requiresCorrectToolForDrops()
+                    .sound(ModSounds.CRYSTAL_BLOCK_SOUNDS)));
 
 
     //---
+
 
     private static <T extends Block> RegistryObject<T> registryBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

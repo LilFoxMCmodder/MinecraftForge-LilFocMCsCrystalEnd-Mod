@@ -20,6 +20,7 @@ public class ModCreativeModeTab {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(Moditems.CRYSTAL.get());
                         output.accept(Moditems.CRYSTAL_INGOT.get());
+                        output.accept(Moditems.CRYSTAL_CHISEL.get());
                     }).build());
 
 
